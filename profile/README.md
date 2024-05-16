@@ -26,3 +26,9 @@ There are two possible scenarios here: a) If you downloaded a package from the r
 **Q4: I am using the Jellyfish client SDK (iOS, Android, React, React Native). How does this change affect me?**
 
 The only change here is the namespace on the respective package manager, i.e., instead of @jellyfish-dev, it will be @fishjam-dev.
+
+**Q5: I am using Jellyfish docker image. How does this change affect me?**
+
+Old github container registry links will stop working. Instead of pulling from `ghcr.io/jellyfish-dev` , pull from `ghcr.io/fishjam-dev`. <br /> 
+For example: `docker pull ghcr.io/jellyfish-dev/jellyfish:0.5.0` -> `docker pull ghcr.io/fishjam-dev/jellyfish:0.5.0`. <br />
+Version 0.5.0 is the last version named `jellyfish`. Starting from version 0.6.0, docker image will be named `fishjam`.
